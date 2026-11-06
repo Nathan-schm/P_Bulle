@@ -2,16 +2,21 @@
 
 /**
  * Retourne le type JavaScript de la valeur.
+ * @param {*} value
+ * @returns le type de value
  */
 export function valueType(value) {
-  // TODO
+  return typeof value;
 }
 
 /**
  * Indique si la valeur est undefined.
+ * @param {*} value
+ * @returns
  */
 export function isUndefined(value) {
-  // TODO
+  if (value.isUndefined === value) return true;
+  if (value.isNull) return false;
 }
 
 /**
