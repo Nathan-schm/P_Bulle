@@ -1,0 +1,32 @@
+à la fin d'une function on doit tjr mettre un return, donc en gros à la fin on devra tjr mettre un return
+
+pour créer une variable en js il faut mettre par exemple
+let x = 4;
+on à déclarer une variable de type number qui vaut 4
+
+pour convertir un string en un nombre il suffit de faire un 
+Number() qui vas convertir tout ce qu'il a dans la () en un nombre
+ce qui donne :
+Number("32");
+ou
+Number(value);
+
+le == compare les valeurs de manière générale mais est principalement utilisée après une conversion
+le === lui doit comparer uniquement des type égaux
+
+pour les pairs on utilise le modulo % en gros la division.
+si on fait 3 % 2 bah c pas paire vu que il nous reste 1, genre on peut faire 2 % 2 mais pas 3 % 2
+donc si on fait 2 % 2 bah io marchera
+donc dans l'exo on l'utilisera comme ceci :
+let x = code % 2;
+returne x === 0;
+
+le let c'est pour créer une variable x qui à comme valeur code modulo 2 pr voir si c'est pairs ou pas
+et le === 0 c'est pr savoir si à la fin du modulo on arrive à 0.
+
+pour écrire une réponse avec des variables à l'intérieur :
+`blablabla ${value} bliblibli ${quantite} blublublu `
+
+pr checker si une comparaison retourne NaN on peut utiliser IsNaN()
+dans l'exo ça donne :
+IsNaN(Number(value))
