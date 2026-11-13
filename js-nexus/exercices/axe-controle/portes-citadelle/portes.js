@@ -2,16 +2,24 @@
 
 /**
  * Retourne le message d'accès correspondant au niveau.
+ * @param {*} level
+ * @returns
  */
 export function accessMessage(level) {
-  // TODO
+  if (level >= 5) return "Accès autorisé";
+  else return "Accès refusé";
 }
 
 /**
  * Retourne l'état textuel d'une porte.
  */
 export function doorStatus(isOpen) {
-  // TODO
+  switch (isOpen) {
+    case true:
+      return "Ouverte";
+    case false:
+      return "Fermée";
+  }
 }
 
 /**
